@@ -4,7 +4,7 @@ namespace FormalBearsDemo\Module;
 
 use Ray\Di\AbstractModule;
 
-class DevModule extends AbstractModule
+class HtmlModule extends AbstractModule
 {
     /**
      * {@inheritdoc}

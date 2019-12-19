@@ -20,7 +20,7 @@ PHP7.2以上
 - `etc/config/modules/app/user_list.yaml` デフォルト
 - `etc/config/modules/{環境のコンテキスト}/user_list.yaml` 環境で切り替えるオーバーライド設定
 
-### 実行
+### App Resource 実行
 
 デフォルト `app` （[`app/user_list.yaml`](https://github.com/kumamidori/FormalBearsDemo/blob/master/etc/config/modules/app/user_list.yaml) のユーザー一覧）
 
@@ -42,6 +42,21 @@ php ./bin/prod.php  get 'app://self/userlist/users'
 ```
 php ./bin/dev.php  get 'app://self/userlist/users' 
 ```
+
+### Page Resource 実行
+
+
+Dev
+
+`php -S localhost:8080  public/dev-html-app.php` 
+
+ -> [http://localhost:8080/userlist/users](http://localhost:8080/userlist/users])
+
+
+Prod
+
+`php -S localhost:8080  public/prod-html-app.php` 
+
 
 ## TODO
 

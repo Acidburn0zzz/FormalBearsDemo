@@ -3,6 +3,10 @@ use BEAR\Package\Bootstrap;
 use BEAR\Resource\ResourceObject;
 
 return function (string $context, string $name = 'FormalBearsDemo') : int {
+
+    // save context for FormalBears
+    $GLOBALS['context'] = $context;
+
     $app = (new Bootstrap)->getApp($name, $context, __DIR__);
     if ($app->httpCache->isNotModified($_SERVER)) {
         $app->httpCache->transfer();

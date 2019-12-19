@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.2.0",
         "bear/package": "^1.9",
-        "formal-bears/formal-bears": "^0.3",
+        "formal-bears/formal-bears": "^0.3.1",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
